@@ -2718,7 +2718,7 @@ case 'sewabot': {
 │❏ ➪ _WELCOME IMAGE_
 ╰──── 
 ╭─[ *MINAT CHAT📌*]
-│❏ ➪ 🪀 _wa.me/6281239024631?text=SEWA+BOT_
+│❏ ➪ 🪀 _wa.me/6288220195739?text=SEWA+BOT_
 ╰────
 ╭─[ *PAYMENT💰*]
 │❏ ➪ _GOPAY_
@@ -2751,7 +2751,7 @@ case 'sewabot': {
                      }
             break
   case 'menu': {
-	anu = `Hai Kak ${pushname}\n\nSaya Adalah XxRaizen-BotWa, Bot Ini Memakai Program Multi Device Beta Dari WhatsApp.\n\nJadi Jika Kamu Menemukan Bug Atau Kesalahan Silahkan Laporkan Kepada Owner Agar Segera Di Perbaiki.\n\nEh iya jangan lupa sv no OWNER ya,jaga diri baik² ya😝.\n\nTerima Kasih🙏`
+	anu = `Hai Kak ${pushname}\n\nSaya Adalah MAPLE Bot, Bot Ini Memakai Program Multi Device Beta Dari WhatsApp.\n\nJadi Jika Kamu Menemukan Bug Atau Kesalahan Silahkan Laporkan Kepada Owner Agar Segera Di Perbaiki.\n\nEh iya jangan lupa sv no OWNER ya,jaga diri baik² ya😝.\n\nTerima Kasih🙏`
               let btn = [{
                                 urlButton: {
                                     displayText: 'YT OWNER 📽️',
@@ -2773,7 +2773,7 @@ case 'sewabot': {
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, '© XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, '© MAPLE Bot', global.thumb, btn)
                      }
             break
             case 'command':{
@@ -2781,11 +2781,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}\n┌──⭓ 「 INFO USER 」⭓\n│\n│ Nama : ${pushname}\n│ Nomor : ${m.sender.split('@')[0]}\n│ Status : ${isCreator ? 'owner' : 'User'}\n│\n└───────⭓\n\n┌──⭓ 「 INFO BOT 」⭓\n│\n│ Prefix : ( ${prefix} )\n│ Nama : ${global.namabot}\n│ Owner : ${global.namaowner}\n│ Mode : ${hisoka.public ? 'Public' : 'Self'}\n│ Runtime : ${runtime(process.uptime())}\n│ Lib : Baileys Multi Device\n│\n└───────⭓`,
                     description: "\n",
-                    buttonText: "KLIK DISINI XxRaizen-BotWa👋",
-                    footerText: "Silahkan Klik Tombol Dibawah Ini Untuk Menampilkan Menu XxRaizen-BotWa",
+                    buttonText: "KLIK DISINI MAPLE Bot👋",
+                    footerText: "Silahkan Klik Tombol Dibawah Ini Untuk Menampilkan Menu MAPLE Bot",
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "All Menu Bot XxRaizen-BotWa",
+								"title": "All Menu MAPLE Bot",
 								"rows": [
 									{
 										"title": "All Menu",
@@ -2795,7 +2795,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "List Menu XxRaizen-BotWa",
+								"title": "List Menu MAPLE Bot",
 								"rows": [
 									{
 										"title": "Group Menu",
