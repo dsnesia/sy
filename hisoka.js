@@ -129,7 +129,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`${'XxRaizen-BotWa'} | Runtime : ${runtime(uptime)}`)
+		await hisoka.setStatus(`${'MAPLE Bot'} | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -200,7 +200,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklagu[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'TEBAK LAGU' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'TEBAK LAGU' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebaklagu[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -218,7 +218,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakgambar[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'TEBAK GAMBAR' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'TEBAK GAMBAR' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebakgambar[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -227,7 +227,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakkata[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'TEBAK KATA' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'TEBAK KATA' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebakkata[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -237,7 +237,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             jawaban = caklontong[m.sender.split('@')[0]]
 	    deskripsi = caklontong_desk[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'TEBAK LONTONG' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'TEBAK LONTONG' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete caklontong[m.sender.split('@')[0]]
 		delete caklontong_desk[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
@@ -247,7 +247,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakkalimat[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'TEBAK KALIMAT' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'TEBAK KALIMAT' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebakkalimat[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -256,7 +256,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklirik[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'TEBAK LIRIK' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'TEBAK LIRIK' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebaklirik[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -265,7 +265,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaktebakan[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'TEBAK TEBAKAN' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'TEBAK TEBAKAN' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, 'MAPLE Bot', m)
                 delete tebaktebakan[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -674,7 +674,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (tebaklagu.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'TEBAK LAGU' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'TEBAK LAGU' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete tebaklagu[m.sender.split('@')[0]]
                     }
                 } else if (args[0] === 'gambar') {
@@ -687,7 +687,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (tebakgambar.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'TEBAK GAMBAR' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'TEBAK GAMBAR' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete tebakgambar[m.sender.split('@')[0]]
                     }
                 } else if (args[0] === 'kata') {
@@ -700,7 +700,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (tebakkata.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'TEBAK KATA' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'TEBAK KATA' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete tebakkata[m.sender.split('@')[0]]
                     }
                 } else if (args[0] === 'kalimat') {
@@ -713,7 +713,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'TEBAK KALIMAT' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'TEBAK KALIMAT' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete tebakkalimat[m.sender.split('@')[0]]
                     }
                 } else if (args[0] === 'lirik') {
@@ -726,7 +726,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (tebaklirik.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'TEBAK LIRIK' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'TEBAK LIRIK' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete tebaklirik[m.sender.split('@')[0]]
                     }
                 } else if (args[0] === 'lontong') {
@@ -740,7 +740,7 @@ case 'cekmati':
                     await sleep(60000)
                     if (caklontong.hasOwnProperty(m.sender.split('@')[0])) {
                     console.log("Jawaban: " + result.jawaban)
-                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'TEBAK LONTONG' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nDeskripsi : ${caklontong_desk[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'XxRaizen-BotWa', m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'TEBAK LONTONG' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nDeskripsi : ${caklontong_desk[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, 'MAPLE Bot', m)
                     delete caklontong[m.sender.split('@')[0]]
 		    delete caklontong_desk[m.sender.split('@')[0]]
                     }
@@ -775,7 +775,7 @@ case 'cekmati':
             let buttons = [
                         { buttonId: 'jodohku', buttonText: { displayText: 'JODOHKU' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, jawab, 'XxRaizen-BotWa', m, {mentions: ments})
+                    await hisoka.sendButtonText(m.chat, buttons, jawab, 'MAPLE Bot', m, {mentions: ments})
             }
             break
             case 'jadian': {
@@ -790,7 +790,7 @@ case 'cekmati':
             let buttons = [
                         { buttonId: 'jadian', buttonText: { displayText: 'JADIAN' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, jawab, 'XxRaizen-BotWa', m, {mentions: menst})
+                    await hisoka.sendButtonText(m.chat, buttons, jawab, 'MAPLE Bot', m, {mentions: menst})
             }
             break
             case 'react': {
@@ -975,7 +975,7 @@ let buttonsVote = [
 
             let buttonMessageVote = {
                 text: teks_vote,
-                footer: 'XxRaizen-BotWa',
+                footer: 'MAPLE Bot',
                 buttons: buttonsVote,
                 headerType: 1
             }
@@ -1016,7 +1016,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 
             let buttonMessageUpvote = {
                 text: teks_vote,
-                footer: 'XxRaizen-BotWa',
+                footer: 'MAPLE Bot',
                 buttons: buttonsUpvote,
                 headerType: 1,
                 mentions: menvote
@@ -1058,7 +1058,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 
             let buttonMessageDevote = {
                 text: teks_vote,
-                footer: 'XxRaizen-BotWa',
+                footer: 'MAPLE Bot',
                 buttons: buttonsDevote,
                 headerType: 1,
                 mentions: menvote
@@ -1115,7 +1115,7 @@ break
                         { buttonId: 'group open', buttonText: { displayText: 'OPEN' }, type: 1 },
                         { buttonId: 'group close', buttonText: { displayText: 'CLOSE' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `Mode Group`, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `Mode Group`, 'MAPLE Bot', m)
 
              }
             }
@@ -1133,7 +1133,7 @@ break
                         { buttonId: 'editinfo open', buttonText: { displayText: 'OPEN' }, type: 1 },
                         { buttonId: 'editinfo close', buttonText: { displayText: 'CLOSE' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `Mode Edit Info`, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `Mode Edit Info`, 'MAPLE Bot', m)
 
             }
             }
@@ -1155,7 +1155,7 @@ break
                         { buttonId: 'antilink on', buttonText: { displayText: 'ON' }, type: 1 },
                         { buttonId: 'antilink off', buttonText: { displayText: 'OFF' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `Mode Antilink`, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `Mode Antilink`, 'MAPLE Bot', m)
                 }
              }
              break
@@ -1166,17 +1166,17 @@ break
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].mute) return m.reply(`Sudah Aktif Sebelumnya`)
                 db.data.chats[m.chat].mute = true
-                m.reply(`${'XxRaizen-BotWa'} telah di mute di group ini !`)
+                m.reply(`${'MAPLE Bot'} telah di mute di group ini !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].mute) return m.reply(`Sudah Tidak Aktif Sebelumnya`)
                 db.data.chats[m.chat].mute = false
-                m.reply(`${'XxRaizen-BotWa'} telah di unmute di group ini !`)
+                m.reply(`${'MAPLE Bot'} telah di unmute di group ini !`)
                 } else {
                  let buttons = [
                         { buttonId: 'mute on', buttonText: { displayText: 'ON' }, type: 1 },
                         { buttonId: 'mute off', buttonText: { displayText: 'OFF' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `Mute Bot`, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `Mute Bot`, 'MAPLE Bot', m)
                 }
              }
              break
@@ -1236,7 +1236,7 @@ break
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
-                      hisoka.send5ButImg(i, txt, 'XxRaizen-BotWa', global.thumb, btn)
+                      hisoka.send5ButImg(i, txt, 'MAPLE Bot', global.thumb, btn)
                     }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
             }
@@ -1270,7 +1270,7 @@ break
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
-                      hisoka.send5ButImg(yoi, txt, 'XxRaizen-BotWa', global.thumb, btn)
+                      hisoka.send5ButImg(yoi, txt, 'MAPLE Bot', global.thumb, btn)
 		}
 		m.reply('Sukses Broadcast')
             }
@@ -1440,7 +1440,7 @@ case 'stext': case 'stickertext': case 'stikertext': {
             let media = await quoted.download()
             let { toAudio } = require('./lib/converter')
             let audio = await toAudio(media, 'mp4')
-            hisoka.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Convert By ${'XxRaizen-BotWa'}.mp3`}, { quoted : m })
+            hisoka.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Convert By ${'MAPLE Bot'}.mp3`}, { quoted : m })
             }
             break
             case 'tovn': case 'toptt': {
@@ -1543,7 +1543,7 @@ case 'stext': case 'stickertext': case 'stikertext': {
                     caption: `*-------「 GIMAGE SEARCH 」-------*
 🤠 *Query* : ${text}
 🔗 *Media Url* : ${images}`,
-                    footer: 'XxRaizen-BotWa',
+                    footer: 'MAPLE Bot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -1573,7 +1573,7 @@ case 'stext': case 'stickertext': case 'stikertext': {
 ⭔ Channel : ${anu.author.url}
 ⭔ Description : ${anu.description}
 ⭔ Url : ${anu.url}`,
-                    footer: 'XxRaizen-BotWa',
+                    footer: 'MAPLE Bot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -1679,7 +1679,7 @@ break
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `☕ Random Coffe`,
-                    footer: 'XxRaizen-BotWa',
+                    footer: 'MAPLE Bot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -1697,7 +1697,7 @@ break
                 let buttonMessage = {
                     image: { url: result.image[0] },
                     caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.type}\n⭔ Detail : ${result.source}\n⭔ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer: 'XxRaizen-BotWa',
+                    footer: 'MAPLE Bot',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2244,7 +2244,7 @@ break
 ⭔ Url : ${anu.media[0]}
 Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan command ytmp3/ytmp4 dengan url diatas
 `,
-			footer: 'XxRaizen-BotWa',
+			footer: 'MAPLE Bot',
 			buttons,
 			headerType: 4
 		    }
@@ -2471,7 +2471,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 				let buttons = [
                     { buttonId: 'start', buttonText: { displayText: 'START' }, type: 1 }
                 ]
-                hisoka.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await hisoka.getName(m.sender)} Welcome To Anonymous Chat\n\nKlik Button Dibawah Ini Untuk Mencari Partner\`\`\``, 'XxRaizen-BotWa', m)
+                hisoka.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await hisoka.getName(m.sender)} Welcome To Anonymous Chat\n\nKlik Button Dibawah Ini Untuk Mencari Partner\`\`\``, 'MAPLE Bot', m)
             }
 			break
             case 'keluar': case 'leave': {
@@ -2498,7 +2498,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'STOP' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Kamu Masih Berada Di dalam Sesi Anonymous, Tekan Button Dibawah Ini Untuk Menghentikan Sesi Anonymous Anda\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Kamu Masih Berada Di dalam Sesi Anonymous, Tekan Button Dibawah Ini Untuk Menghentikan Sesi Anonymous Anda\`\`\``, 'MAPLE Bot', m)
                     throw false
                 }
                 let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
@@ -2507,10 +2507,10 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                         { buttonId: 'next', buttonText: { displayText: 'SKIP' }, type: 1 },
                         { buttonId: 'keluar', buttonText: { displayText: 'STOP' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'MAPLE Bot', m)
                     room.b = m.sender
                     room.state = 'CHATTING'
-                    await hisoka.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'MAPLE Bot', m)
                 } else {
                     let id = + new Date
                     this.anonymous[id] = {
@@ -2528,7 +2528,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'STOP' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, 'MAPLE Bot', m)
                 }
                 break
             }
@@ -2552,10 +2552,10 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                         { buttonId: 'next', buttonText: { displayText: 'SKIP' }, type: 1 },
                         { buttonId: 'keluar', buttonText: { displayText: 'STOP' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'MAPLE Bot', m)
                     room.b = m.sender
                     room.state = 'CHATTING'
-                    await hisoka.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, 'MAPLE Bot', m)
                 } else {
                     let id = + new Date
                     this.anonymous[id] = {
@@ -2573,7 +2573,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'STOP' }, type: 1 }
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, 'XxRaizen-BotWa', m)
+                    await hisoka.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, 'MAPLE Bot', m)
                 }
                 break
             }
@@ -2701,11 +2701,11 @@ let btn = [{
                                     id: 'donasi'
                                 }
                             }]
-                hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
             }
             break
 case 'sewabot': {
-	anu = `╭──「 *_SEWA BOT BY XxRaizen-BotWa* 」
+	anu = `╭──「 *_SEWA BOT BY MAPLE Bot* 」
 │❏ ➪ _1 MINGGU : 5K_
 │❏ ➪ _1 BULAN : 20K_
 │❏ ➪ _PERMANEN : 30k_
@@ -3300,7 +3300,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3362,7 +3362,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3419,7 +3419,7 @@ case 'downloadmenu': {
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3471,7 +3471,7 @@ case 'searchmenu': {
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3517,7 +3517,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3576,7 +3576,7 @@ case 'randommenu': {
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3650,7 +3650,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3704,7 +3704,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3755,7 +3755,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3822,7 +3822,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3894,7 +3894,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -3952,7 +3952,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4005,7 +4005,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4055,7 +4055,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4102,7 +4102,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4149,7 +4149,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4202,7 +4202,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4254,7 +4254,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
 
@@ -4295,7 +4295,7 @@ let btn = [{
                                     id: 'command'
                                 }
                             }]
-                        hisoka.send5ButImg(m.chat, anu, 'XxRaizen-BotWa', global.thumb, btn)
+                        hisoka.send5ButImg(m.chat, anu, 'MAPLE Bot', global.thumb, btn)
                      }
             break
             default:
